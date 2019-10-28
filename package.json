@@ -1,0 +1,20 @@
+{
+  "name": "liri-nod-app",
+  "version": "1.0.0",
+  "description": "search for content for entertainment with Spotify, Bands in Town and OMDB",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chelsea-exe/Liri-nod-app.git"
+  },
+  "keywords": [],
+  "author": "Chelsea Jackson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chelsea-exe/Liri-nod-app/issues"
+  },
+  "homepage": "https://github.com/Chelsea-exe/Liri-nod-app#readme"
+}
