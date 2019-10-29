@@ -10,11 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/Chelsea-exe/Liri-nod-app.git"
   },
-  "keywords": [],
+  "keywords": [
+    "axios",
+    "node",
+    "client",
+    "http"
+  ],
   "author": "Chelsea Jackson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Chelsea-exe/Liri-nod-app/issues"
   },
-  "homepage": "https://github.com/Chelsea-exe/Liri-nod-app#readme"
+  "homepage": "https://github.com/Chelsea-exe/Liri-nod-app#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
 }
