@@ -9,16 +9,43 @@ var spotify = require('node-spotify-api');
 var Spotify = new spotify(keys.spotify);
 var moment = require('moment');
 
+//bot takes user inputs for the search
+var userInput = process.argv[2];
+var userSearch = process.argv[3];
 
-var request;
-var response;
+//App functions with commands using switch, case method
+function userCommand(userInput, userSearch) {
+    switch (userInput) {
+        case "concert-this":
+            concertThis();
+            break;
+        case "spotify-this":
+            spotifyThis();
+            break;
+        case "movie-this":
+            movieThis();
+            break;
+        case "do-what-it-says":
+            doThis(userSearch);
+            break;
+        default:
+            console.log("What are you saying???");
 
-//search for concerts via BandsInTown
-function concertThis() {
-    var queryUrl = "https://rest.bandsintown.com/artists/" + request + "/events?app_id=codingbootcamp"
+    }
 }
 
-
+function spotifyThis() {
+    console.log(`\n---SEARCHING SONG!!!---${userSearch}`);
+    //if user search not found, "Ari Lennox BMO" should appear
+    if (!userSearch) { userSearch = "BMO"};
+    //spotify npm search query format
+    spotify.search({ type: 'track', query: userSearch, limit: 5 }, function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
+         
+});
+}
 
 
 
@@ -59,4 +86,4 @@ function concertThis() {
 //}
 //else {
 //    newMovie(argv.)
-//}
+
